@@ -4,7 +4,7 @@ $(function() {
 
 });
 
-$(document).on('click', '.scrollDown', function(){
+$(document).on('click', '.scrollDown__btn', function(){
     fullpage_api.moveSectionDown();
 });
 
