@@ -1,0 +1,53 @@
+.toggle {
+	background-color: transparent;
+    outline: 0;
+    position: relative;
+	width: 30px;
+    height: 30px;
+    z-index: 200;
+    cursor: pointer;
+	border: none;
+	span {
+        display: block;
+        background-color: #ffffff;
+        width: 24px;
+        height: 2px;
+        left: 50%;
+        margin-left: -12px;
+        position: absolute;
+        border-radius: 4px;
+        transition: transform 0.5s, top 0.2s;
+    }
+}
+
+.tgl-topper {
+	top: 7px;
+    /*transition-delay: 0.2s, 0s */
+}
+
+
+.tgl-middle{
+    top: 15px;
+    /*transition-delay: 0.2s, 0s */
+}
+
+.tgl-bottom {
+    top: 23px;
+    transition-delay: 0.2s, 0s;
+}
+
+.toggle.active {
+	.tgl-topper {
+		top: 15px;
+        transform: rotate(45deg);
+    }
+	.tgl-middle {
+		top: 14px;
+        transform: rotate(-45deg);
+    }
+	.tgl-bottom {
+		opacity: 0;
+		top: 0;
+        transform: rotate(180deg);
+    }
+}

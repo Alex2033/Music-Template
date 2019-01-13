@@ -1,0 +1,104 @@
+.released-album {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    background-color: @album-color;
+    min-width: 545px;
+
+    h3 {
+        font-size: 33px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        font-family: @main-font;
+        margin-bottom: 10px;
+    }
+}
+
+.released-album__exit {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        width: 100%;
+        left: 0;
+        background-color: #ffffff;
+        height: 2px;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.released-album__img {
+    margin-right: 30px;
+    img {
+        width: 101px;
+        height: 101px;
+        object-fit: cover;
+    }
+    
+}
+
+.released-album__info {
+    display: flex;
+    align-items: center;
+}
+
+.released-album__link {
+    text-transform: uppercase;
+    font-size: 19px;
+    transition: color .15s ease;
+    letter-spacing: 1px;
+}
+
+.released-album__title {
+    color: #ffffff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.released-album__available {
+    text-transform: uppercase;
+    color: @dark;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.released-album__dash {
+    width: 11px;
+    height: 2px;
+    background-color: @dark;
+    margin-left: 15px;
+    margin-right: 15px;
+}

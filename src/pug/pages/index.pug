@@ -1,0 +1,76 @@
+doctype html
+html(lang='ru')
+	head
+		title Music template
+		include ../modules/head
+
+	body
+
+		// begin wrapper
+		.wrapper
+
+			include ../modules/header
+
+			include ../modules/navigation
+
+			// begin main-content
+			main.main-content
+
+				#fullpage
+
+					section.section
+
+						.section__bg
+							img(src="img/main/main-background.png", alt="Section background")
+
+						// begin main 
+						.main
+							.container
+								h2.title 
+									| Great 
+									br
+									span.title__italic music 
+									br
+									| production.
+								.main__text
+									p.
+										Breath, Music, Repeat.
+
+							// begin released-album 
+							.released-album
+
+								button.released-album__exit
+
+								.released-album__img
+									img(src="img/released-album/img.jpg", alt="Album img")
+								.released-album__text
+									h3 Darkest hour
+									.released-album__info
+										a(href="/").released-album__title.released-album__link Bigfoot 
+										span.released-album__dash
+										a(href="/").released-album__available.released-album__link Available now
+
+							// end released-album 
+
+						// end main 
+						
+
+					// begin bands 
+					section.section.bands
+						.container
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident, molestiae mollitia veritatis nisi in doloribus soluta error, harum voluptatem, accusamus optio! Cumque ratione quas eius voluptatum totam ipsam ipsum nobis assumenda accusamus facilis perspiciatis sit, quibusdam esse officiis, enim recusandae dolores corporis tenetur in tempore, libero atque architecto dolorem voluptas! Provident sint quibusdam tempore, beatae sed quidem, inventore asperiores maxime repellat ut vitae odit tempora dicta illum nulla quae. Quas porro, rerum ducimus deserunt, provident quis reiciendis nobis in sapiente corporis officia. Suscipit placeat ratione quaerat sunt quos? Quod ab officia cupiditate, temporibus fugiat explicabo asperiores consequuntur in reprehenderit. Nihil tenetur eaque illum provident harum consectetur ipsa illo earum consequatur, rem sed asperiores, quam, ea fugiat voluptas beatae fugit vel iste. Quod, similique magnam assumenda facilis natus, aut quis voluptate alias nobis voluptas perferendis itaque ipsam suscipit non officiis, dolorem nulla aliquid nesciunt placeat ullam necessitatibus laborum deleniti omnis. Totam nam laudantium in id voluptas recusandae, facilis placeat dolorem accusantium beatae saepe explicabo voluptatum nobis cum dolores esse exercitationem. Voluptatibus officia impedit iste, illum, facere molestiae doloremque quasi beatae ipsum ea fugiat! Voluptatum porro temporibus et nobis. Ab exercitationem quia et quod hic voluptates saepe velit dolore dignissimos sit?
+					// end bands 
+			
+
+			// end main-content
+
+		// end wrapper
+		include ../modules/footer
+
+		// begin scrollDown 
+		.scrollDown
+		// end scrollDown 
+
+
+		// scripts 
+		include ../modules/scripts
