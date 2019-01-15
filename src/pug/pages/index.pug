@@ -23,35 +23,43 @@ html(lang='ru')
 						.section__bg
 							img(src="img/main/main-background.png", alt="Section background")
 
-						// begin main 
-						.main
-							.container
-								h2.title 
-									| Great 
-									br
-									span.title__italic music 
-									br
-									| production.
-								p.
-									Breath, Music, Repeat.
+						.section__content
 
-							// begin released-album 
-							.released-album
+							// begin main 
+							.main
+								.container
+									h2.title 
+										| Great 
+										br
+										span.title__italic music 
+										br
+										| production.
+									p.
+										Breath, Music, Repeat.
 
-								button.released-album__exit
+								// begin released-album 
+								.released-album
 
-								.released-album__img
-									img(src="img/released-album/img.jpg", alt="Album img")
-								.released-album__text
-									h3 Darkest hour
-									.released-album__info
-										a(href="/").released-album__title.released-album__link Bigfoot 
-										span.released-album__dash
-										a(href="/").released-album__available.released-album__link Available now
+									button.released-album__exit
 
-							// end released-album 
+									.released-album__img
+										img(src="img/released-album/img.jpg", alt="Album img")
+									.released-album__text
+										h3 Darkest hour
+										.released-album__info
+											a(href="/").released-album__title.released-album__link Bigfoot 
+											span.released-album__dash
+											a(href="/").released-album__available.released-album__link Available now
 
-						// end main 
+								// end released-album 
+
+							// end main 
+
+						// begin scrollDown 
+						.scrollDown
+							.scrollDown__btn
+								img(src="img/icon/angle-down.svg", alt="Angle down")
+						// end scrollDown 
 						
 
 					section.section.second-section
@@ -67,59 +75,123 @@ html(lang='ru')
 									
 									// begin js-slider 
 									.js-slider
-										// begin brand 
-										.brand
-											.brand__top
-												a(href="/").brand__top-img
-													img(src="img/brands/brands-image.jpg", alt="Brands image")
-												.brand__top-text
-													h2.title Down and 
-														br
-														|  Dirty.
-													p.
-														4 Album. - 48 songs
-											
+										.js-slider__item
+											// begin brand 
+											.brand
+												.brand__top
+													a(href="/").brand__top-img
+														img(src="img/brands/brands-image.jpg", alt="Brands image")
+													.brand__top-text
+														h2.title Down and 
+															br
+															|  Dirty.
+														p.
+															4 Album. - 48 songs
+												
 
-											// begin albums 
-											ul.albums
-												li.album
-													a(href="#").album__img
-														img(src="img/brands/album_1.jpg", alt="Album image")
-													a(href="/").album__title Dancing with Lucifer.
-													.album__songs-number 12 Songs
-												li.album
-													a(href="#").album__img
-														img(src="img/brands/album_2.jpg", alt="Album image")
-													a(href="/").album__title Eyes and Sune Over me.
-													.album__songs-number 12 Songs
-												li.album
-													a(href="#").album__img
-														img(src="img/brands/album_3.jpg", alt="Album image")
-													a(href="/").album__title Behind her Blue Eyes.
-													.album__songs-number 12 Songs
-												li.album
-													a(href="#").album__img
-														img(src="img/brands/album_4.jpg", alt="Album image")
-													a(href="/").album__title Broken.
-													.album__songs-number 12 Songs
-											// end albums 
-														
-										// end brand 
+												// begin albums 
+												ul.albums
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_1.jpg", alt="Album image")
+														a(href="/").album__title Dancing with Lucifer.
+														.album__songs-number 12 Songs
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_2.jpg", alt="Album image")
+														a(href="/").album__title Eyes and Sune Over me.
+														.album__songs-number 12 Songs
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_3.jpg", alt="Album image")
+														a(href="/").album__title Behind her Blue Eyes.
+														.album__songs-number 12 Songs
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_4.jpg", alt="Album image")
+														a(href="/").album__title Broken.
+														.album__songs-number 12 Songs
+													// begin more 
+													a(href="/").more 2 More
+													// end more 
+												// end albums 
+															
+											// end brand 
+										.js-slider__item
+											// begin brand 
+											.brand
+												.brand__top
+													a(href="/").brand__top-img
+														img(src="img/brands/brands-image.jpg", alt="Brands image")
+													.brand__top-text
+														h2.title Raise and
+															br
+															|  Belthy.
+														p.
+															2 Album. - 24 songs
+												
+
+												// begin albums 
+												ul.albums
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_1.jpg", alt="Album image")
+														a(href="/").album__title Dancing with Lucifer.
+														.album__songs-number 12 Songs
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_2.jpg", alt="Album image")
+														a(href="/").album__title Eyes and Sune Over me.
+														.album__songs-number 12 Songs
+													li.album
+														a(href="#").album__img
+															img(src="img/brands/album_3.jpg", alt="Album image")
+														a(href="/").album__title Behind her Blue Eyes.
+														.album__songs-number 12 Songs
+													// begin more 
+													a(href="/").more 3 More
+													// end more 
+												// end albums 
+															
+											// end brand 
 									// end js-slider 
 
 							// end brands 
+
+							// begin scrollUp 
+							.scrollUp
+								.scrollUp__btn
+									img(src="img/icon/angle-up.svg", alt="Angle up")
+							// end scrollUp 
+
+					section.section.third-section
+						
+						.section__content
+							// begin news 
+							.news
+								.container
+									.news__top
+										a(href="/").news__top-img
+											img(src="img/news/news-image.jpg", alt="News image")
+										.news__top-text
+											h2.title.news__title Great Music
+												br
+												|  Production Presents
+												br
+												|  the Best.
+											p.
+												This year’s fourth annual Acoustic-4-A Cure show created
+												and curated by James and Sammy Hagar will be held
+												on Monday, May 15, 2017 at San Francisco’s historic
+												Fillmore Theater.
+
+							// end news 
 			
 
 			// end main-content
 
 		// end wrapper
 		include ../modules/footer
-
-		// begin scrollDown 
-		.scrollDown
-			.scrollDown__btn
-				img(src="img/icon/angle-down.svg", alt="Angle down")
-		// end scrollDown 
 
 
 		// scripts 

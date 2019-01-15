@@ -1,0 +1,28 @@
+.more {
+    display: block;
+    color: #ffffff;
+    align-self: flex-start;
+    margin-top: 80px;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin-left: 120px;
+    line-height: 1;
+    transition: border-color .14s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 64px;
+        height: 1px;
+        left: -27px;
+        background-color: #fff;
+        opacity: 0.3;
+        transform: translate(-100%, -50%);
+    }
+
+    &:hover {
+        border-color: rgba(255,255,255, 0);
+    }
+}
