@@ -1,0 +1,67 @@
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -35px;
+}
+
+.album {
+    margin-right: 35px;
+    width: 160px;
+    max-width: 160px;
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.album__img {
+    width: 100%;
+    height: 160px;
+    display: block;
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: @overlay;
+        opacity: 0.5;
+        transition: opacity .1s ease;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 0;
+        }
+    }
+
+}
+
+.album__title {
+    font-family: @alt-font;
+    font-size: 19px;
+    color: #ffffff;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    transition: opacity .1s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.album__songs-number {
+    margin-top: auto;
+    opacity: 0.1;
+}

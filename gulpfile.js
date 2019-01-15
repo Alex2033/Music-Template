@@ -26,7 +26,7 @@ gulp.task('server',  function() {
 
     gulp.watch('src/js/**/*.js', ['copy:js']);
     gulp.watch('src/libs/**/*.*', ['copy:libs']);
-    gulp.watch('src/img/**/*.*', ['copy:img']);
+    gulp.watch('src/img/**', ['copy:img']);
 });
 
 gulp.task('copy:js', function() {
